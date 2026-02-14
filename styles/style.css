@@ -115,6 +115,21 @@
   
   .header__main-text {
     grid-column: 2;
+    align-self: flex-start;
+  }
+}
+
+@media (width >= 1024px) {
+  .header__theme-menu {
+    grid-column: span 2;
+    align-self: self-start;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+    justify-self: center;
+    gap: 10px;
+}
   }
 }
 
