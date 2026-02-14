@@ -5,4 +5,21 @@
 
 :root {
    --page-bg-image: url("../images/cover-image.png");
+   --page-bg-color: #000028;
+   --main-font-family: 'IBM Plex Mono', monospace;
+   --font-weight-bold: 700;
+   --font-weight-regular: 400;
+   --main-text-size: 18px;
+   --main-line-height: 1.3em;
+   --main-heading-color: #DB00FF;
+   --header-main-text-color: #000028;
+   --text-accent-color: #FF0070;
+   --navigation-color: #FF0070;
+   --section-heading-color: #FF0070;
+   --card-heading-color: #000028;
+   --main-text-color: #F1B2CE;
+   --accent-color: #FF8DCB;
+   --page-padding: 10px;
+   --content-section-bottom-margin: 50px;  
+   /* нужно будет переопределеить на 80px на большом экране */
 }

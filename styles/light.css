@@ -10,4 +10,18 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --page-bg-image: url("../images/cover-image-light.png");
+  --page-bg-color: #fff;
+  --main-font-family: 'IBM Plex Mono', monospace;
+  --main-heading-color: #FFC2E6;
+  --header-main-text-color: #353430;
+  --text-accent-color: #FF8DCB;
+  --navigation-color: #353430;
+  --section-heading-color: #353430;
+  --card-heading-color: #353430;
+  --main-text-color: #353430;
+  --accent-color: #FF8DCB;
+}
+
+.theme-light .rec {
+  display: none;
 }
