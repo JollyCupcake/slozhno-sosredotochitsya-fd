@@ -178,10 +178,12 @@
 .footer {
   height: 100vh;
   min-height: 667px;
+  display: grid;
+  place-items: center;
 }
 
 .footer .main-heading {
-  text-shadow: none;
+  text-shadow: 2px 2px 0 var(--text-accent-color);
 }
 
 .gallery-list {
