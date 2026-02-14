@@ -10,4 +10,16 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --page-bg-image: url("../images/cover-image-dark.png");
+   --page-bg-color: #000028;
+   --main-heading-color: #DB00FF;
+   --header-main-text-color: #000028;
+   --text-accent-color: #FF0070;
+   --navigation-color: #FF0070;
+   --section-heading-color: #FF0070;
+   --card-heading-color: #000028;
+   --main-text-color: #F1B2CE;
+   --accent-color: #FF8DCB;
+   /* --page-padding: 10px; */
+   /* --content-section-bottom-margin: 50px;   */
 }
+

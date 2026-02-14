@@ -95,9 +95,16 @@
   color: var(--main-heading-color);
   font-weight: var(--font-weight-bold);
   text-shadow: 4px 4px 0 var(--text-accent-color);
-  font-size: 116px;
+  /* font-size: 116px; */
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   grid-column: span 2;
+}
+
+@media (width >= 768px) {
+  .main-heading {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
 
 .header__main-text {
@@ -129,7 +136,6 @@
     flex-direction: row;
     justify-self: center;
     gap: 10px;
-}
   }
 }
 
