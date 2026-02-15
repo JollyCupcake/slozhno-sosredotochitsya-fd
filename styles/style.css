@@ -68,8 +68,8 @@
   left: var(--page-padding);
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--text-accent-color);
-  border-left: 1px solid var(--text-accent-color);
+  border-bottom: 1px solid var(--navigation-color);
+  border-left: 1px solid var(--navigation-color);
 }
 
 .header__theme-menu {
