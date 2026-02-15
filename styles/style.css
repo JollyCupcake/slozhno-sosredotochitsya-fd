@@ -1,8 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  background-image: var(--page-bg-image);
   background-color: var(--page-bg-color);
   background-position: center;
   background-size: cover;
@@ -11,24 +9,30 @@
   font-size: var(--main-text-size);
   color: var(--main-text-color);
   font-weight: var(--font-weight-regular);
-  padding: var(--page-padding);
   line-height: var(--main-line-height);
 }
 
 .header {
+  background-image: var(--page-bg-image);
   height: 100vh;
   min-height: 668px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: auto auto;
   margin-bottom: 33px;
+  padding: var(--page-padding);
+}
+
+.main {
+  padding: var(--page-padding);
 }
 
 .rec {
   position: absolute;
   color: var(--text-accent-color);
   line-height: 26px;
-  right: 10px;
+  top: var(--page-padding);
+  right: calc(var(--page-padding) + 10px);
 }
 
 .rec::after {
@@ -49,8 +53,8 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: var(--page-padding);
+  right: var(--page-padding);
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--navigation-color);
@@ -60,8 +64,8 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  bottom: 20px;
-  left: 0px;
+  bottom: var(--page-padding);
+  left: var(--page-padding);
   width: 25px;
   height: 25px;
   border-bottom: 1px solid var(--text-accent-color);
@@ -90,7 +94,7 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--navigation-color)
+  outline: 1px solid var(--navigation-color);
 }
 
 .header__theme-menu-button:hover {
@@ -99,7 +103,7 @@
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-bottom: 1px solid var(--navigation-color)
+  border-bottom: 1px solid var(--navigation-color);
 }
 
 .main-heading {
@@ -113,7 +117,7 @@
 
 @media (width >= 768px) {
   .main-heading {
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
@@ -130,7 +134,7 @@
   .header {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .header__main-text {
     grid-column: 2;
     align-self: flex-start;
@@ -157,7 +161,16 @@
 }
 
 @media (width >= 768px) {
-  .tips, .reasons {
+  :root {
+    --page-padding: 20px;
+  }
+
+  .main-heading {
+    margin-inline: calc(var(--page-padding) * -1);
+  }
+
+  .tips,
+  .reasons {
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
@@ -169,15 +182,9 @@
     max-width: 236px;
   }
 
-  .page {
-    padding: 20px;
-  }
-
   .content-section {
-  margin-bottom: 80px;
-}
-
-
+    margin-bottom: 80px;
+  }
 }
 
 .content-section-cards {
@@ -206,7 +213,7 @@
   color: var(--card-heading-color);
   background-color: var(--text-accent-color);
   font-weight: var(--font-weight-bold);
-  margin-bottom: 10px;;
+  margin-bottom: 10px;
 }
 
 .card-heading-regular {
@@ -222,6 +229,7 @@
   min-height: 667px;
   display: grid;
   place-items: center;
+  padding: var(--page-padding);
 }
 
 .footer .main-heading {
@@ -263,17 +271,17 @@
 }
 
 .link {
-  text-shadow:  2px 2px 0 var(--text-accent-color);
+  text-shadow: 2px 2px 0 var(--text-accent-color);
   text-decoration: none;
 }
 
 .link:hover {
   text-decoration: underline;
-  text-decoration-color: var( --main-text-color);
+  text-decoration-color: var(--main-text-color);
   /* text-shadow: none; */
 }
 
 .link:focus-visible {
-  outline: 1px solid var( --main-text-color);
-  text-decoration-color: var( --main-text-color);
+  outline: 1px solid var(--main-text-color);
+  text-decoration-color: var(--main-text-color);
 }
