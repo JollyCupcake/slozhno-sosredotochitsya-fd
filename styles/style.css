@@ -91,6 +91,14 @@
   border: 1px solid var(--navigation-color)
 }
 
+.header__theme-menu-button:hover {
+  outline: 1px solid rgba(var(--navigation-color-rgb), 0.4);
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--navigation-color)
+}
+
 .main-heading {
   color: var(--main-heading-color);
   font-weight: var(--font-weight-bold);
@@ -239,4 +247,20 @@
 
 .image {
   inline-size: 100%;
+}
+
+.link {
+  text-shadow:  2px 2px 0 var(--text-accent-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-decoration-color: var( --main-text-color);
+  /* text-shadow: none; */
+}
+
+.link:focus-visible {
+  outline: 1px solid var( --main-text-color);
+  text-decoration-color: var( --main-text-color);
 }
