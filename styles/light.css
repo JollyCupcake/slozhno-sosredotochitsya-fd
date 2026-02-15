@@ -7,7 +7,7 @@
 :root.theme-light {
   --page-bg-image: url("../images/cover-image-light.png");
   --page-bg-color: #fff;
-  --main-heading-color: #ffc2e6;
+  --hero-text-color: #ffc2e6;
   --header-main-text-color: #353430;
   --text-accent-color: #ff8dcb;
   --navigation-color: #353430;
@@ -26,7 +26,7 @@
   :root {
     --page-bg-image: url("../images/cover-image-light.png");
     --page-bg-color: #fff;
-    --main-heading-color: #ffc2e6;
+    --hero-text-color: #ffc2e6;
     --header-main-text-color: #353430;
     --text-accent-color: #ff8dcb;
     --navigation-color: #353430;
