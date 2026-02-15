@@ -159,9 +159,6 @@
   .header__theme-menu {
     grid-column: span 2;
     align-self: self-start;
-  }
-
-  .header__theme-menu {
     margin-top: 0;
   }
 
