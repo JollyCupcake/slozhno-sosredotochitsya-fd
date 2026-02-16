@@ -18,3 +18,9 @@
   --page-padding: 10px;
   --content-section-bottom-margin: 50px;
 }
+
+@media (width >= 768px) {
+  :root {
+    --page-padding: 20px;
+  }
+}

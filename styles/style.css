@@ -8,10 +8,10 @@
   color: var(--main-text-color);
   font-weight: var(--font-weight-regular);
   line-height: var(--main-line-height);
+  background-image: var(--page-bg-image);
 }
 
 .header {
-  background-image: var(--page-bg-image);
   height: 100vh;
   min-height: 668px;
   display: grid;
@@ -90,10 +90,12 @@
   padding: 2px 13px;
   line-height: 22px;
   min-width: 70px;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--navigation-color);
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
@@ -180,10 +182,6 @@
 }
 
 @media (width >= 768px) {
-  :root {
-    --page-padding: 20px;
-  }
-
   .header {
     margin-bottom: 40px;
   }
@@ -194,10 +192,7 @@
 
   .tips,
   .reasons {
-    display: grid;
     grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-    row-gap: 20px;
   }
 
   .causes .content-section-heading {
@@ -216,9 +211,7 @@
 
 @media (width >= 1024px) {
   .causes .content-section-cards {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
   }
 
   .causes .content-section-heading {
@@ -252,6 +245,10 @@
 
 .gallery-section {
   margin-bottom: 42px;
+}
+
+.card-text:not(:last-of-type) {
+  margin-bottom: 20px;
 }
 
 .footer {
@@ -314,8 +311,7 @@
 }
 
 .link:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--main-text-color);
+  border-bottom: 1px solid var(--main-text-color);
 }
 
 .link:focus-visible {
